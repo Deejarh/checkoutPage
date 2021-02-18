@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>checkout</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="/wppusher-logo copy.png"
+          alt="logo"
+          style="max-width: 100%; height: 100%"
+        />
+      </div>
+      <div class="navbar">
+        <ul>
+          <li class="nav-link"><a href=""> Download </a></li>
+          <li class="nav-link"><a href=""> Learn more </a></li>
+          <li class="nav-link"><a href=""> Pricing </a></li>
+          <li class="nav-link"><a href=""> Help </a></li>
+          <li class="nav-link"><button>Account</button></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="plan box">
+        <p>Freelancer</p>
+        <p>$ <em class="num">99</em> /year</p>
+        <p><i> Automatically renews after one year</i></p>
+
+        <ul>
+          <li class="checkmark">
+            <img src="/icons8-checkmark-yes-64.png" alt="checked" /> Use on 5
+            client sites
+          </li>
+          <li class="checkmark">
+            <img src="/icons8-checkmark-yes-64.png" alt="checked" /> private
+            repositories
+          </li>
+          <li class="checkmark">
+            <img src="/icons8-checkmark-yes-64.png" alt="checked" />
+
+            Email support
+          </li>
+        </ul>
+        <blockquote>
+          Need 20 client sites? <br />
+          <a href=""> switch to the <em>Agency</em> plan</a>
+        </blockquote>
+
+        <blockquote class="second">
+          FTP is horrible to deal with. WP Pusher solves that issue, and the
+          customer support is awesome!
+        </blockquote>
+        <div class="review">
+          <img
+            src="/Bitmap.png"
+            alt="kirk Beard"
+            style="width: 50px; height: 50px; border-radius: 50px"
+          />
+          <p>kirk Beard</p>
+        </div>
+      </div>
+      <div class="checkout box">
+        <h2>checkout</h2>
+        <p class="heading"><strong>1</strong> Your Basic Information</p>
+        <form action="get" class="basic-data">
+          <label for="First Name"> First Name</label>
+          <input type="text" name="First Name" id="" placeholder="jane" />
+          <label for="Last Name"> Last Name</label>
+          <input type="text" name="Last Name" id="" placeholder="doe" />
+          <label for="Email"> Email </label>
+          <input
+            type="email"
+            name="Email"
+            id=""
+            placeholder="janedoe@example.com"
+          />
+        </form>
+        <p class="heading"><strong>2</strong> Your Payment Information</p>
+        <form class="payment-data">
+          <label for="Credit card"> Credit Card</label>
+          <input
+            type="number"
+            name="Credit Card"
+            id=""
+            placeholder="card Number"
+          />
+        </form>
+        <button class="submit" type="submit">Buy WP Pusher</button>
+        <p class="enquire">
+          <strong>?</strong> <em> Need any help?</em> Don’t hesitate to contact
+          support!
+        </p>
+        <button>powered by <strong>Stripe</strong></button>
+      </div>
+    </section>
+  </body>
+</html>

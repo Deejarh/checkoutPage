@@ -1,0 +1,180 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after body {
+  position: relative;
+  max-width: 100%;
+}
+body {
+  background: #f5f8fa;
+  width: 1440px;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .checkout {
+    width: 80%;
+  }
+  .plan {
+    width: 80%;
+  }
+  li > a {
+    display: none;
+  }
+  .submit {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .checkout {
+    width: 60%;
+    order: -1;
+  }
+  .plan {
+    width: 20%;
+  }
+  .basic-data {
+    display: grid;
+  }
+}
+
+header {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  border-bottom: 2px solid grey;
+}
+.navbar {
+  width: 50%;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #1d2c3c;
+
+  font-weight: 700;
+  font-size: 1em;
+}
+.nav-link {
+  list-style-type: none;
+}
+.nav-link > button {
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.plan {
+  background: #1179bf;
+  display: grid;
+
+  margin: auto;
+  padding: 15px;
+  justify-items: flex-start;
+
+  margin-top: 30px;
+  padding-left: 50px;
+}
+.plan > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+li.checkmark {
+  list-style: none;
+  font-size: larger;
+}
+
+.plan > blockquote {
+  margin: 0;
+  padding: 30px 0;
+}
+
+.second {
+  margin: 0px;
+  padding-top: 50px;
+  border-top: 1px solid #ffffff;
+  width: 50%;
+  margin-top: 30px;
+}
+.review {
+  display: flex;
+  gap: 30px;
+}
+
+.checkout {
+  margin: 0;
+  padding-left: 30px;
+}
+.checkout > h2 {
+  padding: 30px 0px;
+  border-bottom: 1px solid #f5f7fa;
+}
+p > strong {
+  font-size: 1em;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid #548bc5;
+  text-align: center;
+  color: #548bc5;
+  margin-right: 10px;
+}
+
+.heading {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-top: 20px;
+}
+form {
+  width: 70%;
+  display: grid;
+  row-gap: 5px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #f5f7fa;
+}
+form > input {
+  height: 36px;
+}
+.submit {
+  height: 50px;
+  margin-top: 30px;
+  background-color: #038e7d;
+}
+.enquire {
+  padding-left: 20px;
+}
+em {
+  font-weight: 700;
+}
+button:last-of-type {
+  margin-left: 90px;
+  background-color: #dadada;
+}
