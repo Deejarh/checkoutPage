@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==
+     "
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>checkout</title>
   </head>
@@ -29,28 +36,29 @@
     <section>
       <div class="plan box">
         <p>Freelancer</p>
-        <p>$ <em class="num">99</em> /year</p>
+        <p><sup>$</sup> <span class="num">99</span> <sub>/year</sub></p>
         <p><i> Automatically renews after one year</i></p>
 
-        <ul>
-          <li class="checkmark">
-            <img src="/icons8-checkmark-yes-64.png" alt="checked" /> Use on 5
-            client sites
-          </li>
-          <li class="checkmark">
-            <img src="/icons8-checkmark-yes-64.png" alt="checked" /> private
-            repositories
-          </li>
-          <li class="checkmark">
+        <div class="service">
+          <div class="checkmark">
             <img src="/icons8-checkmark-yes-64.png" alt="checked" />
-
-            Email support
-          </li>
-        </ul>
+            <p>Use on 5 client sites</p>
+          </div>
+          <div class="checkmark">
+            <img src="/icons8-checkmark-yes-64.png" alt="checked" />
+            <p>private repositories</p>
+          </div>
+          <div class="checkmark">
+            <img src="/icons8-checkmark-yes-64.png" alt="checked" />
+            <p>Email support</p>
+          </div>
+        </div>
         <blockquote>
           Need 20 client sites? <br />
           <a href=""> switch to the <em>Agency</em> plan</a>
         </blockquote>
+
+        <div class="line"></div>
 
         <blockquote class="second">
           FTP is horrible to deal with. WP Pusher solves that issue, and the
@@ -96,7 +104,7 @@
           <strong>?</strong> <em> Need any help?</em> Don’t hesitate to contact
           support!
         </p>
-        <button>powered by <strong>Stripe</strong></button>
+        <div class="footer">powered by <strong>Stripe</strong></div>
       </div>
     </section>
   </body>

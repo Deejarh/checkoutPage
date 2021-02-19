@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -12,6 +14,11 @@ body {
   background: #f5f8fa;
   width: 1440px;
   margin: auto;
+  font-family: "roboto", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -25,10 +32,16 @@ body {
     padding: 0px;
   }
   .checkout {
-    width: 80%;
+    width: 82%;
   }
   .plan {
-    width: 80%;
+    width: 70%;
+    margin-top: 50px;
+    padding-left: 40px;
+    margin: 15px auto;
+    padding: 15px 50px;
+    display: grid;
+    justify-items: flex-start;
   }
   li > a {
     display: none;
@@ -41,17 +54,35 @@ body {
   section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 6px;
+    height: 830px;
+    width: 65%;
+    margin: 70px 0;
+    box-shadow: 0px 15px 35px rgba(43, 64, 78, 0.095505),
+      0px 5px 15px rgba(0, 0, 0, 0.0490829);
   }
   .checkout {
     width: 60%;
     order: -1;
   }
   .plan {
-    width: 20%;
+    width: 23%;
+    padding: 30px 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 92.8%;
+    color: #ffffff;
   }
-  .basic-data {
-    display: grid;
+  .footer {
+    width: 25%;
   }
+}
+.basic-data {
+  display: grid;
 }
 
 header {
@@ -63,7 +94,7 @@ header {
   border-bottom: 2px solid grey;
 }
 .navbar {
-  width: 50%;
+  width: 40%;
 }
 
 .navbar > ul {
@@ -90,14 +121,11 @@ a {
 
 .plan {
   background: #1179bf;
-  display: grid;
-
-  margin: auto;
-  padding: 15px;
-  justify-items: flex-start;
-
-  margin-top: 30px;
-  padding-left: 50px;
+  color: #ffffff;
+}
+.num {
+  font-size: 1.9em;
+  font-weight: 400;
 }
 .plan > ul {
   display: flex;
@@ -106,9 +134,14 @@ a {
   padding: 0;
 }
 
-li.checkmark {
-  list-style: none;
-  font-size: larger;
+div.checkmark {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 7px;
+}
+.plan a {
+  color: #ffffff;
 }
 
 .plan > blockquote {
@@ -116,11 +149,17 @@ li.checkmark {
   padding: 30px 0;
 }
 
+.line {
+  border-top: 1px solid #ffffff;
+  width: 100%;
+  opacity: 0.4;
+}
+
 .second {
   margin: 0px;
   padding-top: 50px;
-  border-top: 1px solid #ffffff;
-  width: 50%;
+
+  width: 95%;
   margin-top: 30px;
 }
 .review {
@@ -138,43 +177,57 @@ li.checkmark {
 }
 p > strong {
   font-size: 1em;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  padding: 8px;
+
   border: 2px solid #548bc5;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #548bc5;
-  margin-right: 10px;
 }
 
 .heading {
   font-size: 1.3em;
   font-weight: 600;
   padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 form {
-  width: 70%;
+  width: 100%;
   display: grid;
   row-gap: 5px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   border-bottom: 2px solid #f5f7fa;
 }
 form > input {
   height: 36px;
 }
 .submit {
-  height: 50px;
-  margin-top: 30px;
+  height: 33px;
+  margin-top: 20px;
   background-color: #038e7d;
+  width: 100%;
 }
 .enquire {
-  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 em {
   font-weight: 700;
+  padding: 3px;
 }
-button:last-of-type {
-  margin-left: 90px;
+.footer {
+  display: flex;
+  width: 45%;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   background-color: #dadada;
+  border-radius: 5px;
 }
