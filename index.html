@@ -74,20 +74,27 @@
         </div>
       </div>
       <div class="checkout box">
-        <h2>checkout</h2>
+        <h2>Checkout</h2>
         <p class="heading"><strong>1</strong> Your Basic Information</p>
         <form action="get" class="basic-data">
-          <label for="First Name"> First Name</label>
-          <input type="text" name="First Name" id="" placeholder="jane" />
-          <label for="Last Name"> Last Name</label>
-          <input type="text" name="Last Name" id="" placeholder="doe" />
-          <label for="Email"> Email </label>
-          <input
-            type="email"
-            name="Email"
-            id=""
-            placeholder="janedoe@example.com"
-          />
+          <div class="data-block block1">
+            <label for="First Name"> First Name </label>
+
+            <input type="text" name="First Name" id="" placeholder="jane" />
+          </div>
+          <div class="data-block block2" >
+            <label for="Last Name"> Last Name</label>
+            <input type="text" name="Last Name" id="" placeholder="doe" />
+          </div>
+          <div class="data-block block3">
+            <label for="Email"> Email </label>
+            <input
+              type="email"
+              name="Email"
+              id=""
+              placeholder="janedoe@example.com"
+            />
+          </div>
         </form>
         <p class="heading"><strong>2</strong> Your Payment Information</p>
         <form class="payment-data">
@@ -96,7 +103,7 @@
             type="number"
             name="Credit Card"
             id=""
-            placeholder="card Number"
+            placeholder="Card Number           MM/YY     CVC"
           />
         </form>
         <button class="submit" type="submit">Buy WP Pusher</button>

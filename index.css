@@ -59,7 +59,8 @@ body {
     border-radius: 6px;
     height: 830px;
     width: 65%;
-    margin: 70px 0;
+    margin: 130px 0 70px 0;
+
     box-shadow: 0px 15px 35px rgba(43, 64, 78, 0.095505),
       0px 5px 15px rgba(0, 0, 0, 0.0490829);
   }
@@ -92,6 +93,9 @@ header {
   margin: auto;
   align-items: center;
   border-bottom: 2px solid grey;
+  position: fixed;
+  z-index: 9;
+  background-color: #f5f8fa;
 }
 .navbar {
   width: 40%;
@@ -203,14 +207,50 @@ form {
   padding-bottom: 30px;
   border-bottom: 2px solid #f5f7fa;
 }
-form > input {
+.basic-data {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+div.block1 {
+  width: 47%;
+}
+div.block2 {
+  width: 47%;
+}
+div.block3 {
+  width: 70%;
+  margin-top: 15px;
+}
+div.data-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+form input {
   height: 36px;
+  background-color: #edeff2;
+  border: #edeff2;
+  border-radius: 4px;
+  color: #646e7a;
+  padding-left: 15px;
+}
+form input:focus {
+  border: #edeff2;
 }
 .submit {
-  height: 33px;
+  height: 35px;
   margin-top: 20px;
   background-color: #038e7d;
+  border: #038e7d;
+  border-radius: 3px;
   width: 100%;
+  color: #ffffff;
+}
+.submit:hover {
+  background-color: #0ac7b1;
+  border: #038e7d;
 }
 .enquire {
   display: flex;
